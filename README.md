@@ -65,15 +65,6 @@ Technologies
 - Java Swing (GUI)
 - AWT Graphics2D
 
-Project Structure
-
-paintapp/
-│
-├── app/            # Main application
-├── ui/             # Drawing panel and UI handling
-├── shapes/         # Shape classes and interfaces
-├── utils/          # Helper classes (Image saving/loading)
-
 How to Run
 
 1. Open the project in your IDE (IntelliJ / Eclipse / NetBeans)
