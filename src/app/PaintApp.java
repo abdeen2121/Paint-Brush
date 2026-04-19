@@ -5,7 +5,6 @@ import utils.ImageManager;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
 
 public class PaintApp extends JFrame {
 
@@ -19,9 +18,15 @@ public class PaintApp extends JFrame {
         DrawingPanel panel=new DrawingPanel();
         JPanel top=new JPanel();
 
-        JButton red=new JButton("Red");
-        JButton green=new JButton("Green");
-        JButton blue=new JButton("Blue");
+        JRadioButton red = new JRadioButton("Red");
+        JRadioButton green = new JRadioButton("Green");
+        JRadioButton blue = new JRadioButton("Blue");
+
+        // Group for choosing one color
+        ButtonGroup colorsGroup = new ButtonGroup();
+        colorsGroup.add(red);
+        colorsGroup.add(green);
+        colorsGroup.add(blue);
 
         JButton line=new JButton("Line");
         JButton rect=new JButton("Rect");
