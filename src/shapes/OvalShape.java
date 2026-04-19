@@ -9,6 +9,7 @@ public class OvalShape extends Shape {
     }
 
     // Draws oval (filled or outline)
+    @Override
     public void draw(Graphics2D g2){
         g2.setColor(color);
         applyStroke(g2);
@@ -23,6 +24,7 @@ public class OvalShape extends Shape {
     }
 
     // Approx containment using bounding box
+    @Override
     public boolean contains(int x,int y){
         return new Rectangle(Math.min(x1,x2),Math.min(y1,y2),
                 Math.abs(x2-x1),Math.abs(y2-y1)).contains(x,y);
