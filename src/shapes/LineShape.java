@@ -8,6 +8,7 @@ public class LineShape extends Shape {
     }
 
     // Draws a straight line
+    @Override
     public void draw(Graphics2D g2){
         g2.setColor(color);
         applyStroke(g2);
@@ -15,6 +16,7 @@ public class LineShape extends Shape {
     }
 
     // Checks if point lies in bounding box
+    @Override
     public boolean contains(int x,int y){
         return new Rectangle(Math.min(x1,x2),Math.min(y1,y2),
                 Math.abs(x2-x1),Math.abs(y2-y1)).contains(x,y);
